@@ -81,6 +81,21 @@ body {
     color:#596188;
     font-size: 14px;
 } 
+.container--about--item {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    max-width: 454px;
+    height: auto;
+    padding: 20px 25px;
+    background-color: #fff;
+    grid-template-columns: 61px 1fr;
+    box-shadow: 7px 1px 13px #d3dae5;
+    box-shadow: 1px 4px 10px #d3dae5;
+    align-items: center;
+    border-radius: 12px;
+    text-align: initial;
+    margin: 0 auto;
+}
 .aside {
     margin: 0px;
     align-content: space-between;
@@ -109,11 +124,10 @@ body {
     grid-column-start: 3;
     grid-column-end: 9;
     display: grid;
-    grid-template-columns: repeat(100%);
-    &--item {
-        
+    grid-template-columns: 100%;
+    &--item{
         img {
-            width: 100%;
+        border-radius: 10px;
         }
     }
 }
@@ -136,7 +150,8 @@ body {
                             "footer footer";
     }
     .container--portfolio--container {
-        grid-template-columns: repeat(2,50%);
+        
+        
     }
     .logo {
         margin: 24px;
@@ -204,26 +219,23 @@ body {
         &--about{
             display: grid;
             grid-template-columns: repeat(12,10%);
-        
-            &--item {
-                grid-column-start: 3;
-                grid-column-end: 7;
-                width: 454px;
-                height: auto;
-                padding: 20px 25px;
-                background-color: #fff;
-                grid-template-columns: 61px 1fr;
-                box-shadow: 7px 1px 13px #d3dae5;
-                box-shadow: 1px 4px 10px #d3dae5;
-                align-items: center;
-                border-radius: 12px;
-            }
         }
         &--portfolio{
             
-            display: grid;
-            grid-template-columns: repeat(12,10%);
+            // display: grid;
+            // grid-template-columns: repeat(12,10%);
             margin: 80px auto;
+            &--container{
+                grid-template-columns: repeat(2,25%);
+                grid-gap: 70px;
+                align-content: center;
+                justify-content: center;
+                &--item {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
             h3{
                 grid-column-start: 5;
             }
