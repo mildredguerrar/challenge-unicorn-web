@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Varela+Round&display=swap");
 body {
+  background-color: #f5fafd;
   margin: 20px;
   font-family: 'Varela Round', sans-serif;
   display: grid;
@@ -43,6 +44,7 @@ body {
       margin: 0 auto; }
 
 .menu {
+  background-color: #fff;
   display: flex;
   justify-content: end; }
   .menu--item {
@@ -80,6 +82,7 @@ body {
   margin: 0 auto; }
 
 .aside {
+  background-color: #fff;
   margin: 0px;
   align-content: space-between;
   grid-area: aside;
@@ -144,6 +147,9 @@ body {
       border-bottom: 11px solid #f5fafd;
       border-image-source: linear-gradient(#4d4d4d, #f5fafd);
       border-image-slice: 29; }
+    .header--skills {
+      grid-template-columns: repeat(12, 10%);
+      grid-template-rows: repeat(12, 25px); }
     .header--img {
       margin-top: 35px;
       padding: 100px; }
@@ -157,9 +163,8 @@ body {
     grid-row-start: 11;
     grid-column-start: 8; }
   h1 {
-    font-size: 60px;
+    font-size: 67px;
     font-weight: 800;
-    padding: 0 18%;
     margin: 0;
     height: 150px; }
   .container--about {

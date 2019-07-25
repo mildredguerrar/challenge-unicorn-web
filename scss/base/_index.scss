@@ -191,7 +191,10 @@ body {
             border-image-slice: 29;
             //box-shadow: 7px 1px 13px #d3dae5;
         }
-        
+        &--skills {
+            grid-template-columns: repeat(12,10%);
+            grid-template-rows: repeat(12,25px);
+        }
         &--img {
             margin-top: 35px;
             padding: 100px;
@@ -212,9 +215,8 @@ body {
     }
 
     h1{
-        font-size: 60px;
+        font-size: 67px;
         font-weight: 800;
-        padding: 0 18%;
         margin: 0;
         height: 150px;
     }
